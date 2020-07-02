@@ -4,13 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Website</title>
+    <style>
+        h1::before{
+            content: "Hello "
+        }
+        body{
+            counter-reset: section;
+        }
+        p::before{
+            counter-increment: section;
+            content: "Section " counter(section) ": ";
+        }
+    </style>
 </head>
 <body>
-    <h1>My First Website</h1>
-    <p>I can push to GitHub</p>
-    <input type="text">
+    <h1>Pseudo Class</h1>
+    <h1>Normal Class</h1>
+    <h1 class="special-effect">Vodro Class</h1>
+    <input name="email" type="text">
     <br>
-    <button>Click Me!</button>
-    <p>Hosting on GitHub</p>
+    <input name="password" type="password">
+    <ul>
+        <p>Alia</p>
+        <p>Dalia</p>
+        <p>Malia</p>
+        <p>Salia</p>
+        <p>Kalia</p>
+        <p>Jalia</p>
+        <p>Talia</p>
+    </ul>
 </body>
 </html>
